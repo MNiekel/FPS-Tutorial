@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://6gv01iiuv7v"]
+
+[ext_resource type="PackedScene" uid="uid://cnwe38rl0kqbi" path="res://18-1911a1/FBX/1911.FBX" id="1_0p3e1"]
+
+[node name="gun" type="Node3D"]
+
+[node name="Root Scene" parent="." instance=ExtResource("1_0p3e1")]

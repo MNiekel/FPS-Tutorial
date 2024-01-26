@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://btmopnjmfyeor"]
+
+[ext_resource type="PackedScene" uid="uid://dbjg4644doxm8" path="res://floor.tscn" id="1_lkt5q"]
+[ext_resource type="PackedScene" uid="uid://1t77076gecei" path="res://player.tscn" id="2_1cffv"]
+[ext_resource type="PackedScene" uid="uid://hrgyiho2n65i" path="res://obstacle.tscn" id="3_x71ho"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="floor" parent="." instance=ExtResource("1_lkt5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_1cffv")]
+
+[node name="obstacle" parent="." instance=ExtResource("3_x71ho")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 5)
+
+[node name="obstacle2" parent="." instance=ExtResource("3_x71ho")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.5, 0)
+
+[node name="obstacle3" parent="." instance=ExtResource("3_x71ho")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.44177, 4.99837)
